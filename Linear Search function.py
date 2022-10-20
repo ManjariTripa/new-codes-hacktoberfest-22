@@ -1,13 +1,13 @@
-def linearSearch(array, n, x):
+def linearSearch(array, m, x):
 
-    for i in range(0, n):
+    for i in range(0, m):
         if (array[i] == x):
             return i
     return -1
 
 array = [2, 4, 0, 1, 9]
 x=int(input("enter value to be searched:"))
-n = len(array)
+m = len(array)
 result = linearSearch(array, n, x)
 if(result == -1):
     print("Element not found")
